@@ -1,0 +1,7 @@
+.container {
+  max-width: 960px;
+  font-family:DFKai-sb;
+  font-weight: bold;
+}
+
+.lh-condensed { line-height: 1.25; }
