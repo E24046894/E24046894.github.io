@@ -7,20 +7,42 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
-
+    <link rel=stylesheet type="text/css" href="style.css">
     <title>長期照顧管理中心問卷</title>
 </head>
 <body class="bg-light">
-    <div class="container">
+    <div class="container"id="pg_one">
+            <div class="py-5 text-center">
+                <img class="d-block mx-auto mb-4" src="http://ltc.tainan.gov.tw/images/logo.jpg" alt="" width="469" height="106">
+                <h2>長期照顧管理中心問卷</h2>
+                <h2 class="lead">臺南市政府社會局長照服務推薦服務平臺(測試版)，詳細資訊請洽<a href="http://ltc.tainan.gov.tw/default.asp"  target="_blank">台南市社會局長期照顧管理中心</a></h2>
+            </div>
+
+            <div class="row">
+                <div class="col-md-8 order-md-1">
+                    <h4 class="mb-3">&#9733政府推動長照2.0，自107年起提供「照顧及專業服務」、「交通接送服務」、「輔具服務及居家無障礙環境變善服務」、「喘息服務」等四大項給付服務，又稱「長照四包錢。</h4>
+
+                    <h4 class="mb-3">&#9733民眾可撥打長照專業1966，或本市合作之長照服務提供單位洽詢或提出申請，後續將由專員到府協助評估及額度確認，聘有外籍看護工家庭亦能申請補助，歡迎民眾多加使用。</h4>
+
+                    <h4 class="mb-3">&#9733本推薦系統為本市長照使用者實際服務概況，經由資訊數據整合下，提供民眾參考他人使用長照組合推薦系統，實際需求仍以民眾需要為主</h4>
+
+                    <h4 class="mb-3">&#9733若有任何問題，歡迎洽詢臺南市政府社會局長期照顧管理中心專線06-2931232。</h4>
+
+                    <button class="btn btn-primary btn-lg btn-block" id="to_two" type="submit">進入推薦系統平臺</button>
+                </div>
+            </div>
+        </div>
+    <div class="container" id="pg_two">
+
         <div class="py-5 text-center">
             <img class="d-block mx-auto mb-4" src="http://ltc.tainan.gov.tw/images/logo.jpg" alt="" width="469" height="106">
             <h2>長期照顧管理中心問卷</h2>
-            <p class="lead">這是體驗測試問卷，詳細資訊請洽<a href="http://ltc.tainan.gov.tw/default.asp">台南市社會局長期照顧管理中心</a></p>
+            <h2 class="lead">臺南市政府社會局長照服務推薦服務平臺(測試版)，詳細資訊請洽<a href="http://ltc.tainan.gov.tw/default.asp" target="_blank">台南市社會局長期照顧管理中心</a></h2>
         </div>
 
-        <div class="row py-5">
+        <div class="row">
             <div class="col-md-8 order-md-1">
-                
+
                 <form class="needs-validation" novalidate>
                     <h4 class="mb-3">日常活動功能量表</h4>
                     <div class="row">
@@ -158,7 +180,7 @@
                                 Please select a valid country.
                             </div>
                         </div>
-                      
+
                     </div>
                     <h4 class="mb-3">工具性日常活動功能量表</h4>
                     <div class="row">
@@ -265,7 +287,7 @@
                                 Please select a valid country.
                             </div>
                         </div>
-                     </div>
+                    </div>
                     <h4 class="mb-3">身體功能量表</h4>
                     <div class="row">
                         <div class="col-md-5 mb-3">
@@ -290,8 +312,8 @@
                                 Please select a valid country.
                             </div>
                         </div>
-                        <h5 class="mb-3">請勾選活動受限制的關節(複選)</h5>
-                        <div class="row">
+                        <h5 class="mb-3" id="knee">請勾選活動受限制的關節(複選)</h5>
+                        <div class="row" id="knee_select">
                             <div class="custom-control custom-checkbox">
                                 <input type="checkbox" class="custom-control-input" id="g_a">
                                 <label class="custom-control-label" for="g_a">肩關節   </label>
@@ -332,14 +354,10 @@
                                 <label class="custom-control-label" for="g_h">全身關節</label>
                             </div>
                             <div class="w-100"></div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="g_i">
-                                <label class="custom-control-label" for="g_i">無</label>
-                            </div>
                         </div>
 
-                        <h5 class="mb-3">請問個案是否有經醫師診斷，且目前（6 個月內）仍存在的疾病(複選)？</h5>
-                        <div class="row">
+                        <h5 class="mb-3" id="sick">請問個案是否有經醫師診斷，且目前（6 個月內）仍存在的疾病(複選)？</h5>
+                        <div class="row" id="sick_select">
                             <div class="custom-control custom-checkbox">
                                 <input type="checkbox" class="custom-control-input" id="g_two_a">
                                 <label class="custom-control-label" for="g_two_a">高血壓</label>
@@ -451,25 +469,34 @@
                                 <label class="custom-control-label" for="g_two_y">罕見疾病</label>
                             </div>
                             <div class="w-100"></div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="g_two_w">
-                                <label class="custom-control-label" for="g_two_w">無</label>
-                            </div>
                         </div>
-                 </div>
-                        
-                        <h4 class="mb-3">請問個案是否獨居</h4>
+                    </div>
 
-                        <div class="d-block my-3">
-                            <div class="custom-control custom-radio">
-                                <input id="single" name="paymentMethod" type="radio" class="custom-control-input" checked required>
-                                <label class="custom-control-label" for="single">獨居</label>
-                            </div>
-                            <div class="custom-control custom-radio">
-                                <input id="together" name="paymentMethod" type="radio" class="custom-control-input" required>
-                                <label class="custom-control-label" for="together">有同居人</label>
-                            </div>
+                    <h4 class="mb-3">請問個案目前是否接受特殊醫療照護</h4>
+
+                    <div class="d-block my-3">
+                        <div class="custom-control custom-radio">
+                            <input id="special" name="spec" type="radio" class="custom-control-input" checked required>
+                            <label class="custom-control-label" for="special">有</label>
                         </div>
+                        <div class="custom-control custom-radio">
+                            <input id="spec_no" name="spec" type="radio" class="custom-control-input" required>
+                            <label class="custom-control-label" for="spec_no">無</label>
+                        </div>
+                    </div>
+
+                    <h4 class="mb-3">請問個案是否獨居</h4>
+
+                    <div class="d-block my-3">
+                        <div class="custom-control custom-radio">
+                            <input id="single" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+                            <label class="custom-control-label" for="single">獨居</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input id="together" name="paymentMethod" type="radio" class="custom-control-input" required>
+                            <label class="custom-control-label" for="together">有同居人</label>
+                        </div>
+                    </div>
                     <h4 class="mb-3">請問個案居住處是否有任何環境上的障礙會影響到日常生活？</h4>
 
                     <div class="d-block my-3">
@@ -481,6 +508,39 @@
                             <input id="stair" name="living" type="radio" class="custom-control-input" required>
                             <label class="custom-control-label" for="stair">個案的活動範圍有階梯或⾨檻</label>
                         </div>
+                    </div>
+                    <h5 class="mb-3" id="knee">請問個案身分別?(可複選)</h5>
+                    <div class="row" id="knee_select">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="i_a">
+                            <label class="custom-control-label" for="i_a">一般戶   </label>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="i_b">
+                            <label class="custom-control-label" for="i_b">低收入戶</label>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="i_c">
+                            <label class="custom-control-label" for="i_c">中低收入戶</label>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="i_d">
+                            <label class="custom-control-label" for="i_d">榮民</label>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="i_e">
+                            <label class="custom-control-label" for="i_e">原住民</label>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="i_f">
+                            <label class="custom-control-label" for="i_f">領有身心障礙證明（手冊）</label>
+                        </div>
+                        <div class="w-100"></div>
                     </div>
                     <div class="col-md-5 mb-3">
                         <label for="cms">請選擇CMS等級</label>
@@ -499,15 +559,68 @@
                             Please select a valid country.
                         </div>
                     </div>
-                        <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
-</form>
+                    <button class="btn btn-primary btn-lg btn-block" type="submit">送出</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="pg_three">
+        <div class="py-5 text-center">
+            <img class="d-block mx-auto mb-4" src="http://ltc.tainan.gov.tw/images/logo.jpg" alt="" width="469" height="106">
+            <h2>長期照顧管理中心問卷</h2>
+            <h2 class="lead">臺南市政府社會局長照服務推薦服務平臺(測試版)，詳細資訊請洽<a href="http://ltc.tainan.gov.tw/default.asp" target="_blank">台南市社會局長期照顧管理中心</a></h2>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 order-md-1">
+                <h4 class="mb-3">喘息服務   GA02,GA05,GA03,GA06</h4>
+
+                <h4 class="mb-3">身體清潔   BA01,BA07,BA23</h4>
+
+                <h4 class="mb-3">交通服務   DA01</h4>
+
+                <h4 class="mb-3">家務協助   BA15</h4>
+
+                <h4 class="mb-3">陪同外出  BA13</h4>
+
+                <h4 class="mb-3">基本日常照顧  BA02</h4>
+
+                <h4 class="mb-3">復能服務  CA01,CA03,CA04</h4>
+
+                <h4 class="mb-3">代購或代領或代送服務 BA16</h4>
+
+                <h4 class="mb-3">陪伴服務 BA20</h4>
+
+                <h4 class="mb-3">餐食照顧 BA05</h4>
+
+                <h4 class="mb-3">居家環境安全或無障礙空間規劃 CC01</h4>
+
+                <h4 class="mb-3">居家照顧床 EH01,EH02,EH03</h4>
+
+                <h4 class="mb-3">測量生命徵象BA03</h4>
+
+                <h4 class="mb-3">肢體關節活動BA11</h4>
+
+                <h4 class="mb-3">送餐服務OT01</h4>
+
+                <h4 class="mb-3">陪同就醫BA14</h4>
+
+                <h4 class="mb-3">輪椅EC02,EC04,EC05,EC06</h4>
+
+
+                <h4 class="mb-3">協助進食或管灌餵食 BA04</h4>
+
+                <h4 class="mb-3">馬桶增高器、便盆椅或沐浴椅 EA01</h4>
+
+                <h4 class="mb-3">協助執行輔助性醫療 BA17</h4>
+
             </div>
         </div>
 
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
-    <script src="bundle.min.js" integrity="sha384-Iep5TjrwnXOp2AdreAjhlprhxI5Ix8Y3I/zJd1tNQZQmonaE3i6fTdrvIG9YjOWl" crossorigin="anonymous"></script>
     <script src="form-validation.js"></script>
+    <script src="test.js"></script>
 </body>
 </html>
