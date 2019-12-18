@@ -25,15 +25,25 @@ body,button, input,select, textarea,h1 ,h2, h3, h4, h5, h6 { font-family: Micros
 
 #pg_one
 {
-   opacity:1;
+   opacity:0;
+
 }
 
 #pg_two
 {
    opacity:0;
+
 }
 
 #pg_three
 {
-   opacity:0;
+   opacity:1;
+
 }
+
+.subtitle 
+{
+    color:blue;
+}
+
+.spacer { margin:0; padding:0; height:20px; } 
